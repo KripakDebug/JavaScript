@@ -31,7 +31,7 @@ body{
 .btn:hover{
     background-color: rgb(190, 32, 32);
 }
-.btn-js{
+.btn-clear{
     outline: none;
     border: none;
     margin: 3px 3px;
@@ -41,10 +41,10 @@ body{
     width: 65px;
     height: 65px;
 }
-.btn-js:hover{
+.btn-clear:hover{
     background-color: rgb(190, 32, 32);
 }
-.back{
+.calc-erase{
     outline: none;
     border: none;
     margin: 3px 3px;
@@ -54,10 +54,10 @@ body{
     width: 65px;
     height: 65px;
 }
-.back:hover{
+.calc-erase:hover{
     background-color: rgb(190, 32, 32);
 }
-#num-equal{
+#calc-equal{
     outline: none;
     border: none;
     margin: 3px 3px;
@@ -67,7 +67,7 @@ body{
     width: 65px;
     height: 65px;
 }
-#num-equal:hover{
+#calc-equal:hover{
     background-color: rgb(190, 32, 32);
 }
 input{

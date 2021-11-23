@@ -1,26 +1,25 @@
-function calc() {
-  const input = document.getElementById("input");
+  const calculatorReferenceField = document.querySelector("#input");
   const btns = document.querySelectorAll(".btn");
-  const btnClear = document.querySelector(".btn-js");
-  const btnEqual = document.getElementById("num-equal");
-  const btnBack = document.querySelector('.back');
+  const btnClear = document.querySelector(".btn-clear");
+  const btnEqual = document.querySelector("#calc-equal");
+  const btnErase = document.querySelector('.calc-erase');
   btns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      input.value += btn.textContent;
+      calculatorReferenceField.value += btn.textContent;
     });
   });
-btnBack.addEventListener('click', () => {
-    let result = input.value;
-    input.value = result.substring(0, result.length-1);
+  btnErase.addEventListener('click', () => {
+    let result = calculatorReferenceField.value;
+    calculatorReferenceField.value = result.substring(0, result.length-1);
 })
   btnClear.addEventListener("click", () => {
-   input.value = ''
+    calculatorReferenceField.value = '';
   });
   btnEqual.addEventListener("click", () => {
-    let result = input.value;
+    let result = calculatorReferenceField.value;
     if(result){
-        input.value = eval(result);
+      calculatorReferenceField.value = eval(result);
     }
   });
-}
-calc();
+
+
